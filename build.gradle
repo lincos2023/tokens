@@ -1,7 +1,7 @@
 buildscript {
     ext {
-        KOTLIN_VERSION = "1.9.0"
-        KETHEREUM_VERSION = "0.85.7"
+        KOTLIN_VERSION = "1.9.22"
+        KETHEREUM_VERSION = "0.86.0"
     }
 
     repositories {
@@ -10,7 +10,7 @@ buildscript {
 
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${KOTLIN_VERSION}"
-        classpath 'com.github.ben-manes:gradle-versions-plugin:0.47.0'
+        classpath 'com.github.ben-manes:gradle-versions-plugin:0.51.0'
     }
 }
 
@@ -64,10 +64,10 @@ dependencies {
 
     implementation "com.github.ethereum-lists.chains:httpsloader:1.6"
     implementation "com.github.ethereum-lists.chains:model:1.6"
-    implementation "com.squareup.okhttp3:okhttp:4.11.0"
+    implementation "com.squareup.okhttp3:okhttp:4.12.0"
 
     implementation 'com.beust:klaxon:5.6'
-    implementation 'com.squareup.moshi:moshi-kotlin:1.15.0'
+    implementation 'com.squareup.moshi:moshi-kotlin:1.15.1'
 
     testImplementation "org.jetbrains.kotlin:kotlin-test"
     testImplementation "org.jetbrains.kotlin:kotlin-test-junit"
